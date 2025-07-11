@@ -1,28 +1,28 @@
 'use client'
 
-import { useState, useCallback, useMemo, useEffect, useRef } from 'react'
-import Fuse from 'fuse.js'
-import { useLocalStorageValue } from '@react-hookz/web'
-import mapboxgl from 'mapbox-gl'
-import { coordEach } from '@turf/meta'
-import 'mapbox-gl/dist/mapbox-gl.css'
-import 'react-circular-progressbar/dist/styles.css'
-import MenuComponent from '@/components/Menu'
-import IntroModal from '@/components/IntroModal'
+import FoundList from '@/components/FoundList'
 import FoundSummary from '@/components/FoundSummary'
+import Input from '@/components/Input'
+import IntroModal from '@/components/IntroModal'
+import MenuComponent from '@/components/Menu'
+import StripeModal from '@/components/StripeModal'
+import useHideLabels from '@/hooks/useHideLabels'
+import useNormalizeString from '@/hooks/useNormalizeString'
+import useTranslation from '@/hooks/useTranslation'
+import { useConfig } from '@/lib/configContext'
 import {
-  DataFeatureCollection,
   DataFeature,
+  DataFeatureCollection,
   RoutesFeatureCollection,
 } from '@/lib/types'
-import Input from '@/components/Input'
-import useHideLabels from '@/hooks/useHideLabels'
-import StripeModal from '@/components/StripeModal'
-import { useConfig } from '@/lib/configContext'
-import useTranslation from '@/hooks/useTranslation'
-import FoundList from '@/components/FoundList'
-import useNormalizeString from '@/hooks/useNormalizeString'
+import { useLocalStorageValue } from '@react-hookz/web'
+import { coordEach } from '@turf/meta'
 import { bbox } from '@turf/turf'
+import Fuse from 'fuse.js'
+import mapboxgl from 'mapbox-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import 'react-circular-progressbar/dist/styles.css'
 
 export default function GamePage({
   fc,
