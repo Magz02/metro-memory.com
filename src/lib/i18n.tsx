@@ -1,5 +1,6 @@
 import rosetta from 'rosetta'
 
+// TODO: add polish
 export const i18n = rosetta({
   en: {
     restartWarning: 'You are going to lose all your progress. Are you sure?',
