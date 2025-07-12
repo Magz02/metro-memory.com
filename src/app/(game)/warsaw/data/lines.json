@@ -2,14 +2,14 @@
   "WarszawaMetroM1": {
     "name": "M1",
     "color": "#0057B7",
-    "backgroundColor": "#000000",
+    "backgroundColor": "#003269",
     "textColor": "#FFFFFF",
     "order": 1000
   },
   "WarszawaMetroM2": {
     "name": "M2",
     "color": "#C8102E",
-    "backgroundColor": "#000000",
+    "backgroundColor": "#800A1D",
     "textColor": "#FFFFFF",
     "order": 1000
   }
