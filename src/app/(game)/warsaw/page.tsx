@@ -1,11 +1,11 @@
-import data from './data/features.json'
-import 'mapbox-gl/dist/mapbox-gl.css'
-import 'react-circular-progressbar/dist/styles.css'
-import { DataFeatureCollection } from '@/lib/types'
-import config from './config'
 import GamePage from '@/components/GamePage'
 import { Provider } from '@/lib/configContext'
+import { DataFeatureCollection } from '@/lib/types'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import { Rubik } from 'next/font/google'
+import 'react-circular-progressbar/dist/styles.css'
+import config from './config'
+import data from './data/features.json'
 
 const font = Rubik({
   weight: 'variable',
@@ -20,7 +20,7 @@ const fc = {
 
 export const metadata = config.METADATA
 
-export default function Wien() {
+export default function Warszawa() {
   return (
     <Provider value={config}>
       <main className={`${font.className} min-h-screen`}>

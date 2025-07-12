@@ -1,59 +1,37 @@
-import { Metadata } from 'next'
-import { MapboxOptions } from 'mapbox-gl'
 import { Config, Line } from '@/lib/types'
+import { MapboxOptions } from 'mapbox-gl'
+import { Metadata } from 'next'
 
 export const BEG_THRESHOLD = 0.5
 
 export const LINES: {
   [name: string]: Line
 } = {
-  ViennaUBahnU1: {
-    name: 'U1',
-    color: '#E20512',
-    backgroundColor: '#710309',
+  WarszawaMetroM1: {
+    name: 'M1',
+    color: '#0057B7',
+    backgroundColor: '#002D5C',
     textColor: '#FFFFFF',
     order: 1000,
   },
-  ViennaUBahnU2: {
-    name: 'U2',
-    color: '#A762A3',
-    backgroundColor: '#553053',
-    textColor: '#FFFFFF',
-    order: 1000,
-  },
-  ViennaUBahnU3: {
-    name: 'U3',
-    color: '#EE7D00',
-    backgroundColor: '#773E00',
-    textColor: '#FFFFFF',
-    order: 1000,
-  },
-  ViennaUBahnU4: {
-    name: 'U4',
-    color: '#009540',
-    backgroundColor: '#004B20',
-    textColor: '#FFFFFF',
-    order: 1000,
-  },
-  ViennaUBahnU6: {
-    name: 'U6',
-    color: '#9D6930',
-    backgroundColor: '#4F3418',
+  WarszawaMetroM2: {
+    name: 'M2',
+    color: '#C8102E',
+    backgroundColor: '#7A0A1D',
     textColor: '#FFFFFF',
     order: 1000,
   },
 }
 
 export const METADATA: Metadata = {
-  title: 'Wien U-Bahn Memory',
-  description: 'Wie viele U-Bahn Stationen können Sie auswendig nennen?',
+  title: 'Memory Metra Warszawskiego',
+  description: 'Ile stacji metra warszawskiego potrafisz wymienić z pamięci?',
   openGraph: {
-    title: 'Wien U-Bahn Memory',
-    description:
-      'Wie viele U-Bahn-Stationen können Sie auswendig nennen? Spielen Sie das Wien Bahn Memory und finden Sie es heraus!',
+    title: 'Memory Metra Warszawskiego',
+    description: 'Ile stacji metra warszawskiego potrafisz wymienić z pamięci?',
     type: 'website',
-    locale: 'de_DE',
-    url: 'https://wien.metro-memory.com/',
+    locale: 'pl_PL',
+    url: 'https://warszawa.metro-memory.com/',
   },
 }
 
@@ -61,8 +39,8 @@ export const MAP_CONFIG: MapboxOptions = {
   container: 'map',
   style: 'mapbox://styles/benjamintd/clo7oftgy00y701pf3zfaf7un',
   bounds: [
-    [16.085209, 48.059028],
-    [16.632466, 48.379277],
+    [20.865979, 52.097884],
+    [21.240529, 52.39131],
   ],
   maxBounds: [
     [14.9, 46.9],
@@ -75,9 +53,9 @@ export const MAP_CONFIG: MapboxOptions = {
 
 export const STRIPE_LINK = 'https://buy.stripe.com/cN2aFb0nI1rI9bi5km'
 
-export const CITY_NAME = 'wien'
+export const CITY_NAME = 'warszawa'
 
-export const LOCALE = 'de'
+export const LOCALE = 'pl'
 
 const config: Config = {
   GAUGE_COLORS: 'inverted',

@@ -3,11 +3,11 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [16.400223, 48.142196] },
+      "geometry": { "type": "Point", "coordinates": [21.066111, 52.131111] },
       "properties": {
         "id": 1,
-        "name": "Oberlaa",
-        "line": "ViennaUBahnU1",
+        "name": "Kabaty",
+        "line": "WarszawaMetroM1",
         "order": 0
       },
       "id": 1

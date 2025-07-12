@@ -1,19 +1,19 @@
 {
   "routes": [
     {
-      "name": "U1",
-      "color": "#E20512",
+      "name": "M1",
+      "color": "#0057B7",
       "text_color": "#FFFFFF",
-      "icon_name": "at-vienna-ubahn-U1",
+      "icon_name": "pl-warszawa-metro-M1",
       "icon_contains_name": true,
-      "live_line_code": "ViennaUBahnU1",
-      "brand": "ViennaUBahn",
+      "live_line_code": "WarszawaMetroM1",
+      "brand": "WarszawaMetro",
       "mode": "metro",
       "supports_routeinfo": true,
-      "url": "https://citymapper.com/vienna/l/ubahn-u1",
+      "url": "https://jakdojade.pl/warszawa/rozklad-jazdy/linia/ZTM_WARSZAWA-M1/kierunek/0",
       "patterns": [
         {
-          "name": "Oberlaa \u00b7 Leopoldau",
+          "name": "Kabaty \u00b7 Młociny",
           "path": [
             [48.142196, 16.400223],
             [48.144495, 16.390947],
@@ -177,7 +177,7 @@
             [48.277228, 16.450419]
           ],
           "stop_points": [
-            { "id": "ViennaStation_Oberlaa", "path_index": 0 },
+            { "id": "WarszawaStation_Kabaty", "path_index": 0 },
             { "id": "ViennaStation_Neulaa", "path_index": 3 },
             { "id": "ViennaStation_Alaudagasse", "path_index": 13 },
             { "id": "ViennaStation_AltesLandgut", "path_index": 22 },
@@ -208,7 +208,7 @@
       ],
       "live_availability": 0,
       "ui_color": "#E20512",
-      "long_name": "Oberlaa \u2013 Leopoldau",
+      "long_name": "Kabaty \u2013 Młociny",
       "status": { "level": 0, "summary": "Keine St\u00f6rungen" },
       "aliases": ["ubahn-u1"]
     },
@@ -1529,13 +1529,13 @@
       "coords": [48.214551, 16.356857],
       "bearing": "W"
     },
-    "ViennaStation_Oberlaa": {
-      "live_code": "ViennaStation_Oberlaa",
-      "routes": ["ViennaUBahnU1"],
-      "brands": ["ViennaUBahn"],
-      "name": "Oberlaa",
-      "coords": [48.142221, 16.400237],
-      "route_icon_names": ["at-vienna-ubahn-U1"],
+    "WarszawaStation_Kabaty": {
+      "live_code": "WarszawaStation_Kabaty",
+      "routes": ["WarszawaMetroM1"],
+      "brands": ["WarszawaMetro"],
+      "name": "Kabaty",
+      "coords": [52.113611, 21.059444],
+      "route_icon_names": ["pl-warszawa-metro-M1"],
       "status": {
         "description": "",
         "effect_time_periods": [
@@ -1545,8 +1545,8 @@
           }
         ],
         "level": 0,
-        "station_id": "ViennaStation_Oberlaa",
-        "summary": "Oberlaa: Station Open"
+        "station_id": "WarszawaStation_Kabaty",
+        "summary": "Kabaty: Station Open"
       }
     },
     "ViennaStation_Erdberg": {
